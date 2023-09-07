@@ -1,0 +1,33 @@
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Todo_app.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card"
+    android:orientation="vertical"
+    android:weightSum="80"
+    android:theme="@style/Theme.Todo_app.AppWidgetContainer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/today_title"
+            />
+    </LinearLayout>
+
+    <ListView
+        tools:listitem="@layout/item_list_2"
+        android:id="@+id/widget_listview"
+        android:layout_gravity="center"
+        android:layout_weight="65"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

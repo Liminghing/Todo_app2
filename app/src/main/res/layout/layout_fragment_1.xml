@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFBFE"
+    tools:context=".fragment_1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="10dp"
+            android:gravity="center|left"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#FF7474"
+            android:paddingStart="10dp"
+            android:layout_weight="1"
+            android:text="Today" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5.5">
+
+                <TextView
+                    android:id="@+id/title_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:fontFamily="@font/inter_seminbold"
+                    android:autoSizeTextType="uniform"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Fri" />
+
+                <TextView
+                    android:id="@+id/title_month"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center|left"
+                    android:fontFamily="@font/inter_extralight"
+                    android:autoSizeTextType="uniform"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="10dp"
+                    android:text="MAY" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/title_date_num"
+                android:layout_width="0dp"
+                android:fontFamily="@font/inter_extralight"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:autoSizeTextType="uniform"
+                android:text="2023-06-20" />
+            <TextView
+                android:id="@+id/title_check"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:fontFamily="@font/inter_extralight"
+                android:paddingVertical="10dp"
+                android:paddingEnd="10dp"
+                android:autoSizeTextType="uniform"
+                android:text="1/3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_list"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/add_item_button"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:src="@drawable/add_item_bt"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerview"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerview" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/add_todo_list"
+        android:fontFamily="@font/inter_extralight"
+        android:textColor="#636363"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

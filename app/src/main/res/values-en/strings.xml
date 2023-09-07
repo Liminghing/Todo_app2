@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="set_language">set language</string>
+    <string name="privacy_policy">privacy_policy</string>
+    <string name="version">version</string>
+    <string name="add_todo_list">add todo list</string>
+    <string name="ADD">ADD</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="SAVE">SAVE</string>
+    <string name="EDIT">EDIT</string>
+</resources>

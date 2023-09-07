@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 배경 색 설정 / 제가 color에 지정한 색입니다 ㅎㅎ -->
+    <solid android:color="#636363" />
+    <!-- 모서리 곡선 설정 -->
+    <corners
+        android:topLeftRadius="90dp"
+        android:topRightRadius="90dp"
+        android:bottomLeftRadius="90dp"
+        android:bottomRightRadius="90dp"/>
+    <!-- 선 크기 및 색 지정 -->
+    <stroke
+        android:width="0dp"
+        android:color="#FFFF" />
+</shape>

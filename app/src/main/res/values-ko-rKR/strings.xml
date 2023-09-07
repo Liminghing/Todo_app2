@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="set_language">언어설정</string>
+    <string name="privacy_policy">개인정보처리방침</string>
+    <string name="version">버전</string>
+    <string name="add_todo_list">할일목록 추가하기</string>
+    <string name="ADD">추가</string>
+    <string name="CANCEL">취소</string>
+    <string name="SAVE">저장</string>
+    <string name="EDIT">수정</string>
+</resources>
